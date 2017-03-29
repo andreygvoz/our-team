@@ -1,0 +1,249 @@
+@import'normalize.css';
+@import'layout';
+$primary-color:#ffcc00;
+$text-color: #333333;
+@mixin main-font {
+	font-family:Raleway,sans-serif;
+	font-weight: 500;
+}
+@mixin title-font {
+	font-family:Roboto,sans-serif;
+	font-weight: 900;
+}
+
+$main-font: Raleway,sans-serif;
+$title-font: Roboto,sans-serif;
+
+
+.ba-container {
+	width: 1140px;
+	
+}
+.ba-image {
+	max-width: 100%;
+	height: 100%;
+	&--highlighted {
+		border:1px solid $primary-color;
+	}
+}
+.ba-our-team {
+	font-family: $main-font;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.71;
+	color: $text-color;
+}
+.ba-separator__image {
+	margin: 0 auto;
+	display: block;
+	
+}
+.ba-separator:before {
+	content: '';
+	width: 212px;
+	height: 1px;
+	background-color: $primary-color;
+	display: block;
+	position: absolute;
+	top: 158px;
+	left: 447px;
+
+}
+.ba-separator:after {
+	content: '';
+	width: 212px;
+	height: 1px;
+	background-color: $primary-color;
+	display: block;
+	position: absolute;
+	top: 158px;
+	right: 447px;
+
+}
+.ba-content {
+	padding-top: 121px;
+} 
+// ba arrow part
+.ba-arrow {
+	background-color: transparent;
+	border: none;
+	outline: none;
+	color:$primary-color;
+	font-size: 40px;
+	position: absolute;
+	&--right {
+		top:465px;
+		right: 105px;
+	}
+	&--left {
+		top: 463px;
+		left: 110px;
+	}
+	
+}
+
+
+//header part
+.ba-header {
+	text-align: center;
+	text-transform: uppercase;
+	
+	
+}
+.ba-site-title {
+	@include title-font;
+	color: $primary-color;
+	font-size: 60px;
+	line-height: 66px;
+	margin-top: -19px;
+}
+.ba-sub-title {
+	font-size: 18px;
+	letter-spacing: 0.02em;
+	font-weight: 500;
+	color: #898F8F;
+}
+ // content part 
+ .ba-content {
+ 	padding-top: 35px;
+ }
+
+// member part 
+
+.ba-member {
+	text-align: center;
+	position: relative;
+	&__name{
+		margin-top: -10px;
+		font-size: 36px;
+		@include title-font;
+		color: #666;
+	}
+	&__photo {
+		border-right:1px solid $primary-color;
+		padding-top: 83px;
+		padding-bottom: 76px;
+	}
+	&__info {
+		padding-top: 85px;
+	}
+	&__position {
+		font-size: 24px;
+		color: #666666;
+	}
+	& p {
+		width: 77%;
+		margin-left: 77px;
+	}
+}
+
+.ba-socials {
+	list-style-type: none;
+	&__item {
+		display: inline-block;
+		border: 3px solid #cccccc;
+		border-radius:50%;
+		margin-right: 5px;
+		width: 28px;
+		height: 28px;
+		
+		
+	}
+	&__icon {
+		color: #ccc;
+	}
+	
+}
+
+.ba-member__name:after {
+	content: '';
+	width: 100px;
+	height: 1px;
+	background-color: $primary-color;
+	display: block;
+	margin: 17px auto;
+}
+
+.ba-view-more {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #666666;
+	font-family: Open sans;
+	font-size: 14px;
+	font-weight: 700;
+	border: 1px solid $primary-color;
+	padding: 2px 14px;
+	line-height: 24px;
+	display: block;
+	width: 126px;
+	margin: 16px auto;
+	transition: .3s ease-in;
+	&:hover {
+		background-color: $primary-color;
+		color: #FFF;
+	}
+	
+}
+.ba-view-more:before {
+	content: '';
+	width: 100px;
+	height: 1px;
+	background-color: $primary-color;
+	
+	
+}
+.ba-submit {
+	text-align: center;
+	margin: 35px 0;
+}
+.ba-button {
+	width: 9px;
+	height: 9px;
+	border-radius: 50%;
+	border:none;
+	background-color: $primary-color;
+	outline: none;
+	margin-left: 5px;
+	padding: 5px;
+	cursor: pointer;
+}
+.ba-button--big {
+	background-color: #FFF;
+	border: 1px solid $primary-color;
+}
+.ba-frame-left {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	border-left: 1px solid  $primary-color;
+	border-top: 1px solid  $primary-color;
+	top: 61px;
+	left: 60px;
+}
+.ba-frame-left1 {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	border-left: 1px solid  $primary-color;
+	border-bottom: 1px solid  $primary-color;
+	top: 395px;
+	left: 65px;
+}
+.ba-frame-right {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	border-top: 1px solid  $primary-color;
+	border-right: 1px solid  $primary-color;
+	top: 61px;
+	left: 395px;
+}
+.ba-frame-right1 {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	border-bottom: 1px solid  $primary-color;
+	border-right: 1px solid  $primary-color;
+	top: 392px;
+	left: 392px;
+}
